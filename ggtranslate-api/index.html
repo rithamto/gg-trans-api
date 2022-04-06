@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate API</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="wrapper-content">
+      <h1 class="title-big">Translate API</h1>
+      <form action="" method="post" name="formTranslate">
+        <div class="container">
+          <div class="col-left">
+            <div class="drop-languages">
+              <select name="languages" id="selectInput" class="select">
+                <!-- <option value="">Phát hiện ngôn ngữ</option>
+                <option value="en">Tiếng Anh</option>
+                <option value="en">Tiếng Anh</option> -->
+              </select>
+            </div>
+            <textarea
+              name="inputLanguage"
+              id="input-language"
+              cols="30"
+              rows="10"
+              value=""
+              class="form-input"
+            ></textarea>
+            <audio src="" class="speech"></audio>
+            <div id="icon-input">
+              <i class="fa-solid fa-volume-low icon-sound"></i>
+            </div>
+          </div>
+
+          <div class="col-center">
+            <div class="btn-change">
+              <button class="icon" id="btn-change">&lrarr;</button>
+            </div>
+          </div>
+
+          <div class="col-right">
+            <div class="drop-languages">
+              <select name="languages" id="selectOutput" class="select">
+                <!-- <option value="">Phát hiện ngôn ngữ</option>
+                <option value="en">Tiếng Anh</option>
+                <option value="en">Tiếng Anh</option> -->
+              </select>
+            </div>
+
+            <textarea
+              name="outputLanguage"
+              id="output-language"
+              cols="30"
+              rows="10"
+              value=""
+              class="form-output"
+              disabled
+            ></textarea>
+            <div id="icon-output">
+              <i class="fa-solid fa-volume-low icon-sound"></i>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <div id="text-selected"></div>
+        </div>
+        <div class="form-container">
+          <button class="btn-translate">Translate</button>
+          <!-- <button class="btn-translate-selected btn-translate">
+            Translate text selected
+          </button> -->
+        </div>
+      </form>
+    </div>
+
+    <!-- --------- ADD TO JS BOOTSTRAP  ---------- -->
+    <script src="./main.js" type="module"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=K8vTO19T"></script>
+  </body>
+</html>
